@@ -31,14 +31,18 @@ https://spring.io/guides/gs/rest-service/
 
 ターミナルを起動
 
+`$ ./gradlew build`
+
+`./build/libs`下に`building-a-restful-web-service-0.0.1-SNAPSHOT.jar`があることを確認
+
 イメージをビルドする。  
-`$ docker build -t raisetech/greeting-restful-api .`
+`$ docker build -t raisetech/greeting-restful-api .`  
 
 コンテナを起動する。  
-`$ docker run -p 8080:8080 raisetech/greeting-restful-api`
+`$ docker run -p 8080:8080 raisetech/greeting-restful-api`  
 
 アプリケーションが起動したことを確認する。  
-ログに「Started BuildingARestfulWebServiceApplication」と出るはず。  
+ログに「Started BuildingARestfulWebServiceApplication」と出るはず。    
 
 `$ curl 'http://localhost:8080/greeting'`
 

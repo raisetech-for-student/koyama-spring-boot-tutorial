@@ -15,8 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3    
     - name: Run command
-      run: pwd
-           ls
+      run: ls
+      
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
